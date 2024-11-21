@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     modal.style.display = "block";
@@ -18,7 +18,7 @@ window.onclick = function(event) {
         }
     });
 };
-=======
+
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     modal.style.display = "block";
@@ -38,4 +38,4 @@ window.onclick = function(event) {
         }
     });
 };
->>>>>>> a3f8a2e (pesan)
+
