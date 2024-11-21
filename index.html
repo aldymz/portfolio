@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+1eOyk9X6Wp+j1MNJ/CLtxDZ56mfFZL6P6HZ6FV5IoKMbUPe8ST8s/vN2pLh/ZtP6JYW7wNAZR9+r5DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">My Portfolio</a>
+            <nav class="navbar">
+                <a href="#profil">Profil</a>
+                <a href="#tugas">Tugas</a>
+                <a href="#hobi">Hobi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Profile Section -->
+        <section id="profile" class="profile-section">
+            <div class="container">
+                <h1>Haii, Saya Aldi Mazmudin</h1>
+                <p>Saya adalah mahasiswa Teknik Informatika dengan keahlian dalam desain grafis dan pengeditan foto. Saya memiliki semangat untuk menggabungkan kreativitas dan teknologi guna menghasilkan konten visual yang menarik. Di luar aktivitas tersebut, saya menikmati hobi mendaki gunung, menjelajahi keindahan alam, dan mencari inspirasi dari lingkungan sekitar.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Tugas</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project" onclick="openModal('modal1')">
+                        <img src="image/Diagram Konteks.jpg" alt="Project 1 Image">
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project" onclick="openModal('modal2')">
+                        <img src="images/project2.jpg" alt="Project 2 Image">
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project" onclick="openModal('modal3')">
+                        <img src="images/project3.jpg" alt="Project 3 Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h2>Project 1</h2>
+                <p>Details about Project 1 go here.</p>
+                <img src="image/Diagram Konteks.jpg" alt="Project 1 Image">
+                <img src="image/Diagram Konteks.jpg" alt="Project 1 Image">
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h2>Project 2</h2>
+                <p>Details about Project 2 go here.</p>
+                <img src="images/project2.jpg" alt="Project 2 Image">
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h2>Project 3</h2>
+                <p>Details about Project 3 go here.</p>
+                <img src="images/project3.jpg" alt="Project 3 Image">
+            </div>
+        </div>
+    </main>
+
+
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="hobbies-section">
+            <div class="container">
+                <h2>Hobi</h2>
+                <p>Salah satu hobi utama saya adalah mendaki gunung. Mendaki memberi saya kesempatan untuk menikmati keindahan alam, merasakan ketenangan di puncak, dan melatih ketahanan fisik maupun mental. Berikut adalah beberapa momen favorit saya:</p>
+                <div class="hobby-gallery">
+                    <img src="images/mountain1.jpg" alt="Gunung 1">
+                    <img src="images/mountain2.jpg" alt="Gunung 2">
+                    <img src="images/mountain3.jpg" alt="Gunung 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <b>Aldymzmdn</b>. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
